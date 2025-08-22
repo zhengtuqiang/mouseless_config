@@ -1,4 +1,4 @@
-app_version: 0.4.0-preview.6.1
+app_version: 0.4.0-preview.6.4
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -299,43 +299,46 @@ keymaps:
     - O
     back mouse button (w/o overlay): null
     close UI element: null
-    cycle click count: null
+    cycle click count: '1'
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: null
-    cycle mouse button: null
-    decrease overlay opacity: null
+    cycle mouse action type: ArrowLeft
+    cycle mouse button: ArrowRight
+    decrease overlay opacity: ArrowDown
     edit config: Tab
     enter free mode: null
     execute mouse action: Space
-    execute mouse move: OptionLeft tap
+    execute mouse move:
+    - OptionLeft tap
+    - enter
     exit free mode:
     - Escape
-    - cmd
-    - CommandLeft tap
+    - CommandLeft
     - cmd+shift
     - option+shift
     - ctrl+shift
     - cmd+option+ctrl
+    - cmd+option+shift+ctrl+q
+    - ctrl+shift
     forward click: null
-    forward mouse button:
-    - W
-    - P
+    forward mouse button: P
     forward mouse button (w/o overlay): null
-    hide overlay: cmd+option+shift+ctrl+w
+    hide overlay:
+    - escape
+    - cmd+option+shift+ctrl+w
     hold for back button: null
     hold for drag: CommandLeft
     hold for forward button: null
-    hold for middle button: OptionRight
+    hold for middle button: ControlLeft
     hold for move: OptionLeft
-    hold for right button: CommandRight
+    hold for right button: OptionRight
     hold for speed decrease: ShiftLeft
     hold for speed increase:
     - ctrl
-    - ;
     - A
-    increase overlay opacity: null
+    - ;
+    increase overlay opacity: ArrowUp
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
@@ -366,7 +369,7 @@ keymaps:
     - C
     - M
     right mouse button (w/o overlay): null
-    show overlay: cmd+option+shift+ctrl+q
+    show overlay: null
     subgrid nudge down:
     - D
     - K
@@ -380,14 +383,17 @@ keymaps:
     - E
     - I
     switch monitor left: null
-    switch monitor right: ControlLeft tap
+    switch monitor right: ShiftLeft tap
     toggle app enabled: null
     toggle continuous mode: cmd+option+shift+ctrl+d
     toggle continuous mode until closed: cmd+option+shift+ctrl+a
-    toggle free mode: null
+    toggle free mode:
+    - OptionRight tap
+    - cmd+option+shift+ctrl+w
     toggle overlay:
     - CommandLeft tap
     - CommandRight tap
+    - cmd+option+shift+ctrl+q
     toggle overlay lock: cmd+option+shift+ctrl+s
     undo last key: Backspace
     wheel down: null
@@ -481,15 +487,15 @@ style_configs:
   - 1.0
   - 0.5
   subgrid_text_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.5
   text_rgba:
-  - 1
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   text_shadow_blur_radius: 4.0
   text_shadow_offset:
   - 0.0
