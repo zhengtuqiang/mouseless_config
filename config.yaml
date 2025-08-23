@@ -321,8 +321,11 @@ keymaps:
     - cmd+option+ctrl
     - cmd+option+shift+ctrl+q
     - ctrl+shift
+    - option+space
     forward click: null
-    forward mouse button: P
+    forward mouse button:
+    - P
+    - W
     forward mouse button (w/o overlay): null
     hide overlay:
     - escape
@@ -477,7 +480,7 @@ style_configs:
   - 0.21
   - 0.48
   - 0.95
-  - 0.15
+  - 0.1
   name: default
   show_initial_highlight: false
   subgrid_font_size_multiplier: 0.75
