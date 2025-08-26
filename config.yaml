@@ -336,7 +336,9 @@ keymaps:
     hold for middle button: ControlLeft
     hold for move: OptionLeft
     hold for right button: OptionRight
-    hold for speed decrease: ShiftLeft
+    hold for speed decrease:
+    - ShiftLeft
+    - ShiftRight
     hold for speed increase:
     - ctrl
     - A
@@ -446,13 +448,13 @@ style_configs:
   - 0.9058823529411765
   - 0.7
   cursor_move_rgba:
-  - 0.75
-  - 0.41
-  - 0.92
+  - 0.00392156862745098
+  - 1.0
+  - 0.3215686274509804
   - 0.7
   cursor_other_rgba:
-  - 0.9411764705882353
-  - 0.9411764705882353
+  - 1
+  - 0.9686274509803922
   - 0.058823529411764705
   - 0.7
   cursor_rgba:
@@ -461,9 +463,9 @@ style_configs:
   - 0.58
   - 0.5
   cursor_right_button_rgba:
-  - 0.92
-  - 0.32
-  - 0.32
+  - 0.8705882352941177
+  - 0.058823529411764705
+  - 0.058823529411764705
   - 0.7
   cursor_size: 8
   font_family: '[Apple System Font]'
