@@ -1,4 +1,4 @@
-app_version: 0.4.0-preview.6.4
+app_version: 0.4.0-preview.7
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -313,7 +313,6 @@ keymaps:
     - OptionLeft tap
     - enter
     exit free mode:
-    - Escape
     - CommandLeft
     - cmd+shift
     - option+shift
@@ -453,7 +452,7 @@ style_configs:
   - 0.3215686274509804
   - 0.7
   cursor_other_rgba:
-  - 1
+  - 1.0
   - 0.9686274509803922
   - 0.058823529411764705
   - 0.7
