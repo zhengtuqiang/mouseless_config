@@ -1,4 +1,4 @@
-app_version: 0.4.0-preview.7
+app_version: 0.4.0
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -338,6 +338,7 @@ keymaps:
     hold for speed decrease:
     - ShiftLeft
     - ShiftRight
+    - /
     hold for speed increase:
     - ctrl
     - A
@@ -510,4 +511,4 @@ style_configs:
   - 1.0
   - 1.0
   text_y_offset: 0.0
-  window_opacity: 0.2
+  window_opacity: 0.1
