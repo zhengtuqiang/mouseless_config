@@ -74,9 +74,9 @@ grid_configs:
   nudges_per_cell: 8
   strategy: subgrid
   subgrid_dims:
-  - 5
   - 3
-  subgrid_mouse_action_keys: YUIOP HJKL; NM,./
+  - 3
+  subgrid_mouse_action_keys: UPO J;L M/.
 keyboard_layout:
   id: com.apple.keylayout.US
   name: U.S.
@@ -314,6 +314,7 @@ keymaps:
     - OptionLeft tap
     - enter
     exit free mode:
+    - delete
     - CommandLeft
     - cmd+shift
     - option+shift
@@ -330,6 +331,7 @@ keymaps:
     hide overlay:
     - escape
     - cmd+option+shift+ctrl+w
+    - delete
     hold for back button: null
     hold for drag: CommandLeft
     hold for forward button: null
