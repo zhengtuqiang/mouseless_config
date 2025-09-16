@@ -1,4 +1,4 @@
-app_version: 0.4.0
+app_version: 0.4.1
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -49,9 +49,9 @@ grid_configs:
   nudges_per_cell: 6
   strategy: subgrid
   subgrid_dims:
-  - 11
+  - 10
   - 3
-  subgrid_mouse_action_keys: QWERT YUIOP[ ASDFG HJKL;' ZXCVB NM,./ \
+  subgrid_mouse_action_keys: 'QWERT YUIOP ASDFG HJKL; ZXCVB NM,./ '
 - always_show_subgrid: false
   grid_defn:
   - border_width: 0.0
