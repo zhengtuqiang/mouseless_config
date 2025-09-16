@@ -485,7 +485,7 @@ style_configs:
   - 0.21
   - 0.48
   - 0.95
-  - 0.1
+  - 0.15
   name: default
   show_initial_highlight: false
   subgrid_font_size_multiplier: 0.75
