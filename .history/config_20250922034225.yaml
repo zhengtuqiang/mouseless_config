@@ -46,7 +46,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: true
   name: position_based_ztq
-  nudges_per_cell: 8
+  nudges_per_cell: 6
   strategy: subgrid
   subgrid_dims:
   - 10
@@ -448,7 +448,7 @@ style_configs:
   cursor_drag_rgba:
   - 0.396078431372549
   - 0.00392156862745098
-  - 1.0
+  - 1
   - 0.7
   cursor_move_rgba:
   - 0.00392156862745098
@@ -514,4 +514,4 @@ style_configs:
   - 1.0
   - 1.0
   text_y_offset: 0.0
-  window_opacity: 0.2
+  window_opacity: 0.1
