@@ -1,4 +1,4 @@
-app_version: 0.4.1
+app_version: 0.4.2
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -304,9 +304,9 @@ keymaps:
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: ArrowLeft
-    cycle mouse button: ArrowRight
-    decrease overlay opacity: ArrowDown
+    cycle mouse action type: null
+    cycle mouse button: null
+    decrease overlay opacity: null
     edit config: Tab
     enter free mode: null
     execute mouse action: Space
@@ -346,7 +346,7 @@ keymaps:
     - ctrl
     - A
     - ;
-    increase overlay opacity: ArrowUp
+    increase overlay opacity: null
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
