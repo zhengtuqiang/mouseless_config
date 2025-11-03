@@ -1,4 +1,4 @@
-app_version: 0.4.2
+app_version: 0.4.3
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
