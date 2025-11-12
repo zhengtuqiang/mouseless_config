@@ -1,4 +1,4 @@
-app_version: 0.4.1
+app_version: 0.4.3
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -12,10 +12,10 @@ behavior_configs:
   move_real_cursor_with_virtual: false
   move_speed_multiplier: 5.0
   movement_easing: 0.3
-  multi_action_timeout_ms: 400
+  multi_action_timeout_ms: 800
   name: main_behavior
   send_escape_after_global_alt_tap__windows: true
-  tap_threshold_ms: 250
+  tap_threshold_ms: 150
   wheel_easing: 0.3
   wheel_speed_multiplier: 2.0
   wheel_step_size: 30.0
@@ -35,7 +35,7 @@ grid_configs:
     num_cells_x: 5
     num_cells_y: 6
   - border_width: 1.0
-    callback: build_cell_strings
+    callback: build_cell_strings 
     keys: ''
     num_cells_x: 5
     num_cells_y: 6
@@ -46,7 +46,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: true
   name: position_based_ztq
-  nudges_per_cell: 6
+  nudges_per_cell: 8
   strategy: subgrid
   subgrid_dims:
   - 10
@@ -304,9 +304,9 @@ keymaps:
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: ArrowLeft
-    cycle mouse button: ArrowRight
-    decrease overlay opacity: ArrowDown
+    cycle mouse action type: null
+    cycle mouse button: null
+    decrease overlay opacity: null
     edit config: Tab
     enter free mode: null
     execute mouse action: Space
@@ -346,7 +346,7 @@ keymaps:
     - ctrl
     - A
     - ;
-    increase overlay opacity: ArrowUp
+    increase overlay opacity: null
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
@@ -448,7 +448,7 @@ style_configs:
   cursor_drag_rgba:
   - 0.396078431372549
   - 0.00392156862745098
-  - 1
+  - 1.0
   - 0.7
   cursor_move_rgba:
   - 0.00392156862745098
@@ -514,4 +514,4 @@ style_configs:
   - 1.0
   - 1.0
   text_y_offset: 0.0
-  window_opacity: 0.1
+  window_opacity: 0.2
