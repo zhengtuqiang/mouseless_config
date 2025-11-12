@@ -1,4 +1,4 @@
-app_version: 0.4.3
+app_version: 0.5.0-preview.1
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -22,7 +22,7 @@ behavior_configs:
   wheel_step_size_large: 125.0
 classname: AppConfig
 custom_monitor_assignments:
-- position_based_ztq2
+- position_based_ztq
 debug_options: {}
 display_input: none
 event_tap_location: hid_head
@@ -46,7 +46,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: true
   name: position_based_ztq
-  nudges_per_cell: 2
+  nudges_per_cell: 3
   strategy: subgrid
   subgrid_dims:
   - 10
@@ -437,14 +437,29 @@ style_configs:
   - 1.0
   - 1.0
   - 0.2
-  background_rgba:
-  - 0.49
-  - 0.4
-  - 0.0
-  - 0.25
+  background_colors:
+  - - 0.49
+    - 0.4
+    - 0
+    - 0.4
+  bg_color_block_size: 1
+  bg_color_transforms_level_1:
+  - - hsla_add
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+  bg_color_transforms_level_2:
+  - - hsla_add
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+  char_display: all
   char_spacing_cell_width_ratio: 0.2
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
+  colorParamInput: none
   cursor_drag_rgba:
   - 0.396078431372549
   - 0.00392156862745098
@@ -514,4 +529,5 @@ style_configs:
   - 1.0
   - 1.0
   text_y_offset: 0.0
+  use_bg_color_transforms: false
   window_opacity: 0.2

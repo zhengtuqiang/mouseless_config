@@ -22,7 +22,7 @@ behavior_configs:
   wheel_step_size_large: 125.0
 classname: AppConfig
 custom_monitor_assignments:
-- position_based_ztq2
+- position_based_ztq
 debug_options: {}
 display_input: none
 event_tap_location: hid_head
@@ -46,7 +46,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: true
   name: position_based_ztq
-  nudges_per_cell: 2
+  nudges_per_cell: 8
   strategy: subgrid
   subgrid_dims:
   - 10
@@ -71,7 +71,7 @@ grid_configs:
     num_cells_y: 1
   hold_subgrid_key_for_nudge: true
   name: position_based_ztq2
-  nudges_per_cell: 3
+  nudges_per_cell: 8
   strategy: subgrid
   subgrid_dims:
   - 3
