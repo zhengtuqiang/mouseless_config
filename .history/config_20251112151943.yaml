@@ -22,7 +22,7 @@ behavior_configs:
   wheel_step_size_large: 125.0
 classname: AppConfig
 custom_monitor_assignments:
-- position_based_ztq
+- position_based_ztq2
 debug_options: {}
 display_input: none
 event_tap_location: hid_head
