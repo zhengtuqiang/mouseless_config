@@ -390,11 +390,17 @@ keymaps:
     subgrid nudge up:
     - E
     - I
-    switch monitor left: null
-    switch monitor right: ShiftLeft tap
+    switch monitor left: ArrowLeft tap
+    switch monitor right:
+    - ShiftLeft tap
+    - ArrowRight tap
     toggle app enabled: null
-    toggle continuous mode: cmd+option+shift+ctrl+d
-    toggle continuous mode until closed: cmd+option+shift+ctrl+a
+    toggle continuous mode:
+    - cmd+option+shift+ctrl+d
+    - ArrowUp tap
+    toggle continuous mode until closed:
+    - cmd+option+shift+ctrl+a
+    - ArrowDown tap
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
