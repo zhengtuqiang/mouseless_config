@@ -383,7 +383,7 @@ keymaps:
     left mouse button (w/o overlay): null
     middle click:
     - ControlLeft tap
-    - '-'
+    - '- tap'
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -404,7 +404,7 @@ keymaps:
     repeat last mouse action: pageup
     right click:
     - OptionRight tap
-    - '='
+    - = tap
     right mouse button:
     - C
     - M
@@ -413,37 +413,15 @@ keymaps:
     subgrid nudge down:
     - D
     - K
-    - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - ','
-    - .
-    - /
     subgrid nudge left:
     - S
     - J
-    - A
-    - H
     subgrid nudge right:
     - F
     - L
-    - G
-    - ;
     subgrid nudge up:
     - E
     - I
-    - Q
-    - W
-    - R
-    - T
-    - Y
-    - U
-    - O
-    - P
     switch monitor left: ArrowLeft tap
     switch monitor right:
     - ShiftLeft tap
@@ -452,12 +430,10 @@ keymaps:
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
     - ArrowUp
-    - ''' double tap'
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
     - ArrowDown
     - pagedown
-    - ''' tap'
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
@@ -466,9 +442,7 @@ keymaps:
     - CommandLeft tap
     - CommandRight tap
     - cmd+option+shift+ctrl+q
-    toggle overlay lock:
-    - cmd+option+shift+ctrl+s
-    - cmd+enter
+    toggle overlay lock: cmd+option+shift+ctrl+s
     undo last key: Backspace
     wheel down: null
     wheel down fast: null
@@ -508,11 +482,7 @@ style_configs:
     - 0.4
     - 0.0
     - 0.25
-  - - 0.5
-    - 0.5
-    - 0.5
-    - 0.33
-  bg_color_block_size: 15
+  bg_color_block_size: 1
   bg_color_transforms_level_1:
   - - hsla_add
     - 0.0

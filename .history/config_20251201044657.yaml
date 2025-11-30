@@ -466,9 +466,7 @@ keymaps:
     - CommandLeft tap
     - CommandRight tap
     - cmd+option+shift+ctrl+q
-    toggle overlay lock:
-    - cmd+option+shift+ctrl+s
-    - cmd+enter
+    toggle overlay lock: cmd+option+shift+ctrl+s
     undo last key: Backspace
     wheel down: null
     wheel down fast: null
