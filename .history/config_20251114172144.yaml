@@ -77,31 +77,6 @@ grid_configs:
   - 3
   - 3
   subgrid_mouse_action_keys: UPO J;L M/.
-- always_show_subgrid: false
-  grid_defn:
-  - border_width: 0.0
-    callback: build_cell_strings
-    keys: QWER ASDF ZXCV UIOP JKL; NM,.
-    num_cells_x: 4
-    num_cells_y: 6
-  - border_width: 1.0
-    callback: build_cell_strings
-    keys: ''
-    num_cells_x: 5
-    num_cells_y: 3
-  - border_width: 0.0
-    callback: apply_strings_and_subgrid_to_cells
-    keys: ''
-    num_cells_x: 2
-    num_cells_y: 1
-  hold_subgrid_key_for_nudge: true
-  name: position_based_ztq3
-  nudges_per_cell: 1
-  strategy: subgrid
-  subgrid_dims:
-  - 8
-  - 3
-  subgrid_mouse_action_keys: 'QWER UIOP ASDF JKL; ZXCV M,./ '
 keyboard_layout:
   id: com.apple.keylayout.US
   name: U.S.
@@ -329,8 +304,8 @@ keymaps:
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: 2 tap
-    cycle mouse button: 3 tap
+    cycle mouse action type: null
+    cycle mouse button: null
     decrease overlay opacity: null
     edit config: Tab
     enter free mode: null
@@ -356,7 +331,6 @@ keymaps:
     hide overlay:
     - escape
     - cmd+option+shift+ctrl+w
-    - cmd+option+shift+ctrl+\
     - delete
     hold for back button: null
     hold for drag: CommandLeft
@@ -381,9 +355,7 @@ keymaps:
     - V
     left mouse button: Space
     left mouse button (w/o overlay): null
-    middle click:
-    - ControlLeft tap
-    - '- tap'
+    middle click: ControlLeft tap
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -398,13 +370,9 @@ keymaps:
     move up:
     - I
     - E
-    release hold/drag:
-    - Escape
-    - delete
-    repeat last mouse action: pageup
-    right click:
-    - OptionRight tap
-    - = tap
+    release hold/drag: Escape
+    repeat last mouse action: cmd+option+shift+ctrl+f
+    right click: OptionRight tap
     right mouse button:
     - C
     - M
@@ -429,15 +397,13 @@ keymaps:
     toggle app enabled: null
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
-    - ArrowUp
+    - ArrowUp tap
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
-    - ArrowDown
-    - pagedown
+    - ArrowDown tap
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
-    - cmd+option+shift+ctrl+\
     toggle overlay:
     - CommandLeft tap
     - CommandRight tap
