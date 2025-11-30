@@ -383,7 +383,7 @@ keymaps:
     left mouse button (w/o overlay): null
     middle click:
     - ControlLeft tap
-    - '-'
+    - '- tap'
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -404,7 +404,7 @@ keymaps:
     repeat last mouse action: pageup
     right click:
     - OptionRight tap
-    - '='
+    - = tap
     right mouse button:
     - C
     - M
@@ -413,37 +413,15 @@ keymaps:
     subgrid nudge down:
     - D
     - K
-    - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - ','
-    - .
-    - /
     subgrid nudge left:
     - S
     - J
-    - A
-    - H
     subgrid nudge right:
     - F
     - L
-    - G
-    - ;
     subgrid nudge up:
     - E
     - I
-    - Q
-    - W
-    - R
-    - T
-    - Y
-    - U
-    - O
-    - P
     switch monitor left: ArrowLeft tap
     switch monitor right:
     - ShiftLeft tap
@@ -452,12 +430,10 @@ keymaps:
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
     - ArrowUp
-    - ''' double tap'
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
     - ArrowDown
     - pagedown
-    - ''' tap'
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
@@ -497,14 +473,14 @@ monitor_assignment_mode: custom
 name: ''
 style_configs:
 - always_on_subgrid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.2
   background_colors:
   - - 0.49
     - 0.4
-    - 0.0
+    - 0
     - 0.25
   - - 0.5
     - 0.5
@@ -527,19 +503,19 @@ style_configs:
   char_spacing_cell_width_ratio: 0.2
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
-  colorParamInput: none
+  colorParamInput: rgbHex
   cursor_drag_rgba:
   - 0.396078431372549
   - 0.00392156862745098
-  - 1.0
+  - 1
   - 0.7
   cursor_move_rgba:
   - 0.00392156862745098
-  - 1.0
+  - 1
   - 0.3215686274509804
   - 0.7
   cursor_other_rgba:
-  - 1.0
+  - 1
   - 0.9686274509803922
   - 0.058823529411764705
   - 0.7
@@ -559,9 +535,9 @@ style_configs:
   font_weight: 500
   grid_line_style: lines
   grid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.5
   highlight_animation_ms: 150
   highlight_rgba:
@@ -573,29 +549,29 @@ style_configs:
   show_initial_highlight: false
   subgrid_font_size_multiplier: 0.75
   subgrid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.5
   subgrid_text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.5
   text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
+  - 1
   text_shadow_blur_radius: 4.0
   text_shadow_offset:
   - 0.0
   - 0.0
   text_shadow_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
+  - 1
   text_y_offset: 0.0
-  use_bg_color_transforms: false
+  use_bg_color_transforms: true
   window_opacity: 0.2
