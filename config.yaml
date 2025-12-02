@@ -444,13 +444,10 @@ keymaps:
     - U
     - O
     - P
-    switch monitor left:
-    - ArrowLeft tap
-    - '[ tap'
+    switch monitor left: ArrowLeft tap
     switch monitor right:
     - ShiftLeft tap
     - ArrowRight tap
-    - '] tap'
     toggle app enabled: null
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
