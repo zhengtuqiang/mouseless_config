@@ -319,7 +319,7 @@ keyboard_layout:
     126: "\x1E"
 keymaps:
 - entries:
-    back click: null
+    back click: Home
     back mouse button:
     - Q
     - O
@@ -348,7 +348,7 @@ keymaps:
     - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
-    forward click: null
+    forward click: End
     forward mouse button:
     - P
     - W
@@ -401,7 +401,9 @@ keymaps:
     release hold/drag:
     - Escape
     - delete
-    repeat last mouse action: pageup
+    repeat last mouse action:
+    - pageup
+    - pagedown
     right click:
     - OptionRight tap
     - '='
@@ -452,11 +454,10 @@ keymaps:
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
     - ArrowUp
-    - ''' double tap'
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
     - ArrowDown
-    - ''' tap'
+    - ''''
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
@@ -505,7 +506,7 @@ style_configs:
   background_colors:
   - - 0.49
     - 0.4
-    - 0
+    - 0.0
     - 0.25
   - - 0.5019607843137255
     - 0.5019607843137255
@@ -513,11 +514,11 @@ style_configs:
     - 0.28
   - - 0.49019607843137253
     - 0.4
-    - 0
+    - 0.0
     - 0.25
   - - 0.49019607843137253
     - 0.4
-    - 0
+    - 0.0
     - 0.25
   - - 0.5019607843137255
     - 0.5019607843137255
@@ -525,21 +526,26 @@ style_configs:
     - 0.28
   - - 0.49019607843137253
     - 0.4
-    - 0
+    - 0.0
     - 0.25
-  bg_color_block_size: 5
+  bg_color_block_size: 15
   bg_color_transforms_level_1:
   - - hsla_add
-    - 0
-    - 0
-    - 0
-    - 0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
   bg_color_transforms_level_2:
   - - hsla_add
-    - 0
-    - 0
-    - 0
-    - 0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - hsla_add
+    - 0.1
+    - 0.1
+    - 0.0
+    - 0.0
   char_display: all
   char_spacing_cell_width_ratio: 0.2
   char_spacing_font_size_ratio: 0.5
