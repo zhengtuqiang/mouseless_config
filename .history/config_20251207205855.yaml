@@ -384,7 +384,6 @@ keymaps:
     middle click:
     - ControlLeft tap
     - '-'
-    - ']'
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -408,7 +407,6 @@ keymaps:
     right click:
     - OptionRight tap
     - '='
-    - '['
     right mouse button:
     - C
     - M
