@@ -5,7 +5,7 @@ behavior_configs:
   free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
-  hide_location: bottom_left
+  hide_location: top_left
   initial_action_location: system_cursor
   initial_overlay_monitor: with_mouse
   move_duration_ms: 100
@@ -332,7 +332,7 @@ keymaps:
     cycle mouse action type: 2 tap
     cycle mouse button: 3 tap
     decrease overlay opacity: null
-    edit config: Tab
+    edit config: '4'
     enter free mode: null
     execute mouse action: Space
     execute mouse move:
@@ -460,6 +460,7 @@ keymaps:
     - cmd+option+shift+ctrl+a
     - ArrowDown
     - ''''
+    - Tab
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
