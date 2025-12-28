@@ -319,7 +319,7 @@ keyboard_layout:
     126: "\x1E"
 keymaps:
 - entries:
-    back click: Home
+    back click: null
     back mouse button:
     - Q
     - O
@@ -348,7 +348,7 @@ keymaps:
     - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
-    forward click: End
+    forward click: null
     forward mouse button:
     - P
     - W
@@ -385,6 +385,7 @@ keymaps:
     - ControlLeft tap
     - '-'
     - ']'
+    - End
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -405,10 +406,12 @@ keymaps:
     repeat last mouse action:
     - pageup
     - pagedown
+    - \
     right click:
     - OptionRight tap
     - '='
     - '['
+    - Home
     right mouse button:
     - C
     - M

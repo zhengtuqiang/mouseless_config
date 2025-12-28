@@ -5,7 +5,7 @@ behavior_configs:
   free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
-  hide_location: bottom_left
+  hide_location: top_left
   initial_action_location: system_cursor
   initial_overlay_monitor: with_mouse
   move_duration_ms: 100
@@ -34,7 +34,7 @@ grid_configs:
     keys: QWERT ASDFG ZXCVB YUIOP HJKL; NM,./
     num_cells_x: 5
     num_cells_y: 6
-  - border_width: 1
+  - border_width: 1.0
     callback: build_cell_strings
     keys: ''
     num_cells_x: 5
@@ -77,6 +77,31 @@ grid_configs:
   - 3
   - 3
   subgrid_mouse_action_keys: UPO J;L M/.
+- always_show_subgrid: false
+  grid_defn:
+  - border_width: 0.0
+    callback: build_cell_strings
+    keys: QWER ASDF ZXCV UIOP JKL; NM,.
+    num_cells_x: 4
+    num_cells_y: 6
+  - border_width: 1.0
+    callback: build_cell_strings
+    keys: ''
+    num_cells_x: 5
+    num_cells_y: 3
+  - border_width: 0.0
+    callback: apply_strings_and_subgrid_to_cells
+    keys: ''
+    num_cells_x: 2
+    num_cells_y: 1
+  hold_subgrid_key_for_nudge: true
+  name: position_based_ztq3
+  nudges_per_cell: 1
+  strategy: subgrid
+  subgrid_dims:
+  - 8
+  - 3
+  subgrid_mouse_action_keys: 'QWER UIOP ASDF JKL; ZXCV M,./ '
 keyboard_layout:
   id: com.apple.keylayout.US
   name: U.S.
@@ -294,20 +319,20 @@ keyboard_layout:
     126: "\x1E"
 keymaps:
 - entries:
-    back click: null
+    back click: Home
     back mouse button:
     - Q
     - O
     back mouse button (w/o overlay): null
     close UI element: null
-    cycle click count: '1'
-    cycle font: 2 tap
-    cycle font reverse: 3 tap
+    cycle click count: 1 tap
+    cycle font: null
+    cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: null
-    cycle mouse button: null
-    decrease overlay opacity: 5 tap
-    edit config: Tab
+    cycle mouse action type: 2 tap
+    cycle mouse button: 3 tap
+    decrease overlay opacity: '8'
+    edit config: '4'
     enter free mode: null
     execute mouse action: Space
     execute mouse move:
@@ -323,7 +348,7 @@ keymaps:
     - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
-    forward click: null
+    forward click: End
     forward mouse button:
     - P
     - W
@@ -331,6 +356,7 @@ keymaps:
     hide overlay:
     - escape
     - cmd+option+shift+ctrl+w
+    - cmd+option+shift+ctrl+\
     - delete
     hold for back button: null
     hold for drag: CommandLeft
@@ -346,7 +372,7 @@ keymaps:
     - ctrl
     - A
     - ;
-    increase overlay opacity: 4 tap
+    increase overlay opacity: '7'
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
@@ -355,7 +381,10 @@ keymaps:
     - V
     left mouse button: Space
     left mouse button (w/o overlay): null
-    middle click: null
+    middle click:
+    - ControlLeft tap
+    - '-'
+    - ']'
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -370,9 +399,16 @@ keymaps:
     move up:
     - I
     - E
-    release hold/drag: Escape
-    repeat last mouse action: cmd+option+shift+ctrl+f
-    right click: null
+    release hold/drag:
+    - Escape
+    - delete
+    repeat last mouse action:
+    - pageup
+    - pagedown
+    right click:
+    - OptionRight tap
+    - '='
+    - '['
     right mouse button:
     - C
     - M
@@ -381,15 +417,37 @@ keymaps:
     subgrid nudge down:
     - D
     - K
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - /
     subgrid nudge left:
     - S
     - J
+    - A
+    - H
     subgrid nudge right:
     - F
     - L
+    - G
+    - ;
     subgrid nudge up:
     - E
     - I
+    - Q
+    - W
+    - R
+    - T
+    - Y
+    - U
+    - O
+    - P
     switch monitor left: ArrowLeft tap
     switch monitor right:
     - ShiftLeft tap
@@ -397,18 +455,23 @@ keymaps:
     toggle app enabled: null
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
-    - ArrowUp tap
+    - ArrowUp
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
-    - ArrowDown tap
+    - ArrowDown
+    - ''''
+    - Tab
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
+    - cmd+option+shift+ctrl+\
     toggle overlay:
     - CommandLeft tap
     - CommandRight tap
     - cmd+option+shift+ctrl+q
-    toggle overlay lock: cmd+option+shift+ctrl+s
+    toggle overlay lock:
+    - cmd+option+shift+ctrl+s
+    - cmd+enter
     undo last key: Backspace
     wheel down: null
     wheel down fast: null
@@ -439,20 +502,16 @@ monitor_assignment_mode: custom
 name: ''
 style_configs:
 - always_on_subgrid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 0.2
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.1
   background_colors:
-  - - 0.49
-    - 0.4
-    - 0
-    - 0.25
-  - - 0.5
-    - 0.5
-    - 0.5
-    - 0.33
-  bg_color_block_size: 15
+  - - 1.0
+    - 1.0
+    - 1.0
+    - 0.35
+  bg_color_block_size: 0
   bg_color_transforms_level_1:
   - - hsla_add
     - 0.0
@@ -465,11 +524,36 @@ style_configs:
     - 0.0
     - 0.0
     - 0.0
+  - - hsla_add
+    - 0.02
+    - -0.15
+    - 0.2
+    - 0.1
+  - - hsla_add
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - hsla_add
+    - 0.02
+    - -0.15
+    - 0.2
+    - 0.1
+  - - hsla_add
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+  - - hsla_add
+    - 0.02
+    - -0.15
+    - 0.2
+    - 0.1
   char_display: all
   char_spacing_cell_width_ratio: 0.2
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
-  colorParamInput: rgbHex
+  colorParamInput: none
   cursor_drag_rgba:
   - 0.396078431372549
   - 0.00392156862745098
@@ -486,10 +570,10 @@ style_configs:
   - 0.058823529411764705
   - 0.7
   cursor_rgba:
-  - 0.3
-  - 0.42
-  - 0.58
-  - 0.9
+  - 1.0
+  - 0.25
+  - 0.0
+  - 0.7
   cursor_right_button_rgba:
   - 0.8705882352941177
   - 0.058823529411764705
@@ -501,38 +585,38 @@ style_configs:
   font_weight: 500
   grid_line_style: lines
   grid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.5
   highlight_animation_ms: 150
   highlight_rgba:
-  - 0.49019607843137253
-  - 0.4
-  - 0
-  - 0.1
+  - 0.9
+  - 0.42
+  - 0.15
+  - 0.25
   name: default
   show_initial_highlight: false
   subgrid_font_size_multiplier: 0.75
   subgrid_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.5
   subgrid_text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 0.5
   text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
   - 1.0
   text_shadow_blur_radius: 4.0
   text_shadow_offset:
-  - 0.0
-  - 0.0
+  - 2.0
+  - 2.0
   text_shadow_rgba:
   - 1.0
   - 1.0
@@ -540,4 +624,4 @@ style_configs:
   - 1.0
   text_y_offset: 0.0
   use_bg_color_transforms: false
-  window_opacity: 0.6
+  window_opacity: 1.0
