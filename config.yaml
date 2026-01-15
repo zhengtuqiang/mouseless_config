@@ -325,14 +325,14 @@ keymaps:
     - O
     back mouse button (w/o overlay): null
     close UI element: null
-    cycle click count: 1 tap
+    cycle click count: 7 tap
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: 2 tap
-    cycle mouse button: 3 tap
+    cycle mouse action type: 8 tap
+    cycle mouse button: 9 tap
     decrease overlay opacity: null
-    edit config: '4'
+    edit config: '0'
     enter free mode: null
     execute mouse action: Space
     execute mouse move:
@@ -386,6 +386,8 @@ keymaps:
     - '-'
     - ']'
     - End
+    - pageup
+    - 4 tap
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -404,14 +406,15 @@ keymaps:
     - Escape
     - delete
     repeat last mouse action:
-    - pageup
-    - pagedown
     - \
+    - '6'
     right click:
     - OptionRight tap
     - '='
     - '['
     - Home
+    - pagedown
+    - '1'
     right mouse button:
     - C
     - M
@@ -452,9 +455,7 @@ keymaps:
     - O
     - P
     switch monitor left: ArrowLeft tap
-    switch monitor right:
-    - ShiftLeft tap
-    - ArrowRight tap
+    switch monitor right: ArrowRight tap
     toggle app enabled: null
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
@@ -464,6 +465,8 @@ keymaps:
     - ArrowDown
     - ''''
     - Tab
+    - '`'
+    - '3'
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w

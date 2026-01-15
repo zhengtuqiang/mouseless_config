@@ -5,7 +5,7 @@ behavior_configs:
   free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
-  hide_location: bottom_left
+  hide_location: top_left
   initial_action_location: system_cursor
   initial_overlay_monitor: with_mouse
   move_duration_ms: 100
@@ -325,14 +325,14 @@ keymaps:
     - O
     back mouse button (w/o overlay): null
     close UI element: null
-    cycle click count: 1 tap
+    cycle click count: 7 tap
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: 2 tap
-    cycle mouse button: 3 tap
+    cycle mouse action type: 8 tap
+    cycle mouse button: 9 tap
     decrease overlay opacity: null
-    edit config: Tab
+    edit config: '0'
     enter free mode: null
     execute mouse action: Space
     execute mouse move:
@@ -383,7 +383,11 @@ keymaps:
     left mouse button (w/o overlay): null
     middle click:
     - ControlLeft tap
-    - '- tap'
+    - '-'
+    - ']'
+    - End
+    - pageup
+    - 4 tap
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -401,10 +405,16 @@ keymaps:
     release hold/drag:
     - Escape
     - delete
-    repeat last mouse action: pageup
+    repeat last mouse action:
+    - \
+    - '6'
     right click:
     - OptionRight tap
-    - = tap
+    - '='
+    - '['
+    - Home
+    - pagedown
+    - '1'
     right mouse button:
     - C
     - M
@@ -413,19 +423,39 @@ keymaps:
     subgrid nudge down:
     - D
     - K
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ','
+    - .
+    - /
     subgrid nudge left:
     - S
     - J
+    - A
+    - H
     subgrid nudge right:
     - F
     - L
+    - G
+    - ;
     subgrid nudge up:
     - E
     - I
+    - Q
+    - W
+    - R
+    - T
+    - Y
+    - U
+    - O
+    - P
     switch monitor left: ArrowLeft tap
-    switch monitor right:
-    - ShiftLeft tap
-    - ArrowRight tap
+    switch monitor right: ArrowRight tap
     toggle app enabled: null
     toggle continuous mode:
     - cmd+option+shift+ctrl+d
@@ -433,7 +463,10 @@ keymaps:
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
     - ArrowDown
-    - pagedown
+    - ''''
+    - Tab
+    - '`'
+    - '3'
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
@@ -442,7 +475,9 @@ keymaps:
     - CommandLeft tap
     - CommandRight tap
     - cmd+option+shift+ctrl+q
-    toggle overlay lock: cmd+option+shift+ctrl+s
+    toggle overlay lock:
+    - cmd+option+shift+ctrl+s
+    - cmd+enter
     undo last key: Backspace
     wheel down: null
     wheel down fast: null
@@ -482,7 +517,27 @@ style_configs:
     - 0.4
     - 0.0
     - 0.25
-  bg_color_block_size: 1
+  - - 0.5019607843137255
+    - 0.5019607843137255
+    - 0.5019607843137255
+    - 0.28
+  - - 0.49019607843137253
+    - 0.4
+    - 0.0
+    - 0.25
+  - - 0.49019607843137253
+    - 0.4
+    - 0.0
+    - 0.25
+  - - 0.5019607843137255
+    - 0.5019607843137255
+    - 0.5019607843137255
+    - 0.28
+  - - 0.49019607843137253
+    - 0.4
+    - 0.0
+    - 0.25
+  bg_color_block_size: 15
   bg_color_transforms_level_1:
   - - hsla_add
     - 0.0
@@ -493,6 +548,11 @@ style_configs:
   - - hsla_add
     - 0.0
     - 0.0
+    - 0.0
+    - 0.0
+  - - hsla_add
+    - 0.1
+    - 0.1
     - 0.0
     - 0.0
   char_display: all
