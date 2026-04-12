@@ -1,4 +1,4 @@
-app_version: 0.5.0-preview.1
+app_version: 1.0.0-preview.1
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -25,9 +25,17 @@ custom_monitor_assignments:
 - position_based_ztq4
 - position_based_ztq4
 - position_based_ztq4
+custom_mouse_scaling: 1.0
+custom_mouse_screen_offset_scaling: 1.0
+custom_overlay_scaling: 1.0
 debug_options: {}
 display_input: none
 event_tap_location: hid_head
+general_settings:
+  automatically_check_for_updates: false
+  check_for_preview_releases: false
+  hide_welcome_screen: true
+  ignore_update_to_version: null
 grid_configs:
 - always_show_subgrid: false
   grid_defn:
@@ -351,6 +359,7 @@ keymaps:
     - Q
     - O
     back mouse button (w/o overlay): null
+    clear keyboard state: null
     close UI element: null
     cycle click count: 7 tap
     cycle font: null
@@ -375,6 +384,7 @@ keymaps:
     - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
+    force overlay resize: null
     forward click: null
     forward mouse button:
     - P
@@ -400,6 +410,7 @@ keymaps:
     - A
     - ;
     increase overlay opacity: null
+    invert colors: null
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
@@ -532,8 +543,12 @@ keymaps:
     wheel up: null
     wheel up fast: null
   name: mac
+log_level: info
 monitor_assignment_mode: custom
+mouse_scaling: auto
+mouse_screen_offset_scaling: auto
 name: ''
+overlay_scaling: auto
 style_configs:
 - always_on_subgrid_rgba:
   - 1.0
