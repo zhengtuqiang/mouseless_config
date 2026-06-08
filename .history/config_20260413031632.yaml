@@ -33,7 +33,7 @@ display_input: none
 event_tap_location: hid_head
 general_settings:
   automatically_check_for_updates: false
-  check_for_preview_releases: true
+  check_for_preview_releases: false
   hide_welcome_screen: true
   ignore_update_to_version: null
 grid_configs:
@@ -361,12 +361,12 @@ keymaps:
     back mouse button (w/o overlay): null
     clear keyboard state: null
     close UI element: null
-    cycle click count: '7'
+    cycle click count: 7 tap
     cycle font: null
     cycle font reverse: null
     cycle grid action level: null
-    cycle mouse action type: '8'
-    cycle mouse button: '9'
+    cycle mouse action type: 8 tap
+    cycle mouse button: 9 tap
     decrease overlay opacity: ArrowDown
     edit config: '0'
     enter free mode: null
@@ -384,7 +384,7 @@ keymaps:
     - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
-    force overlay resize: cmd+option+shift+ctrl+f
+    force overlay resize: null
     forward click: null
     forward mouse button:
     - P
@@ -410,7 +410,7 @@ keymaps:
     - A
     - ;
     increase overlay opacity: ArrowUp
-    invert colors: '2'
+    invert colors: null
     jump to bottom: N
     jump to left edge: null
     jump to right edge: null
@@ -425,8 +425,7 @@ keymaps:
     - ']'
     - End
     - pageup
-    - '4'
-    - ''''
+    - 4 tap
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
     move down:
@@ -454,12 +453,11 @@ keymaps:
     - Home
     - pagedown
     - '1'
-    - h
     right mouse button:
     - C
     - M
     right mouse button (w/o overlay): null
-    show overlay: cmd+option+shift+ctrl+q
+    show overlay: null
     subgrid nudge down:
     - D
     - K
@@ -494,18 +492,16 @@ keymaps:
     - U
     - O
     - P
-    switch monitor left: ArrowLeft
-    switch monitor right: ArrowRight
+    switch monitor left: ArrowLeft tap
+    switch monitor right: ArrowRight tap
     toggle app enabled: null
-    toggle continuous mode:
-    - cmd+option+shift+ctrl+d
-    - '5'
+    toggle continuous mode: cmd+option+shift+ctrl+d
     toggle continuous mode until closed:
     - cmd+option+shift+ctrl+a
+    - ''''
     - Tab
     - '`'
     - '3'
-    - g
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+w
@@ -513,13 +509,12 @@ keymaps:
     toggle overlay:
     - CommandLeft tap
     - CommandRight tap
+    - cmd+option+shift+ctrl+q
     - cmd+shift+space
     toggle overlay lock:
     - cmd+option+shift+ctrl+s
     - cmd+enter
-    undo last key:
-    - Backspace
-    - n
+    undo last key: Backspace
     wheel down: null
     wheel down fast: null
     wheel left: null
@@ -640,7 +635,7 @@ style_configs:
   - 1.0
   - 1.0
   - 0.9
-  highlight_animation_ms: 50
+  highlight_animation_ms: 120
   highlight_rgba:
   - 0.21176470588235294
   - 0.47843137254901963
