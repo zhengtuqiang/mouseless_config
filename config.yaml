@@ -7,8 +7,8 @@ behavior_configs:
   hide_cursor_on_click: false
   hide_location: top_left
   initial_action_location: system_cursor
-  initial_overlay_monitor: with_mouse
-  mouse_value_cycle_behavior: once
+  initial_overlay_monitor: with_keyboard_focus
+  mouse_value_cycle_behavior: persist
   move_duration_ms: 100
   move_real_cursor_with_virtual: false
   move_speed_multiplier: 5.0
@@ -23,6 +23,7 @@ behavior_configs:
   wheel_step_size_large: 125.0
 classname: AppConfig
 custom_monitor_assignments:
+- position_based_ztq4
 - position_based_ztq4
 - position_based_ztq4
 - position_based_ztq4
@@ -404,13 +405,13 @@ keymaps:
     hold for move: OptionLeft
     hold for right button: OptionRight
     hold for speed decrease:
-    - ShiftLeft
-    - ShiftRight
     - /
-    hold for speed increase:
-    - ctrl
     - A
     - ;
+    hold for speed increase:
+    - ctrl
+    - ShiftLeft
+    - ShiftRight
     increase overlay opacity: ArrowUp
     invert colors: '2'
     jump to bottom: N
@@ -607,7 +608,7 @@ style_configs:
   char_display: all
   char_spacing_cell_width_ratio: 0.1
   char_spacing_font_size_ratio: 0.5
-  char_spacing_strategy: cell_width_relative
+  char_spacing_strategy: font_size_relative
   colorParamInput: none
   cursor_drag_rgba:
   - 0.396078431372549
@@ -638,15 +639,15 @@ style_configs:
   font_family: '[Apple System Font]'
   font_size_multiplier: 0.5
   font_weight: 400
-  free_mode_indicator_offset_x: 20
-  free_mode_indicator_offset_y: 20
+  free_mode_indicator_offset_x: 20.0
+  free_mode_indicator_offset_y: 20.0
   free_mode_indicator_rgba:
   - 0.3
   - 0.42
   - 0.58
-  - 0.9
+  - 1.0
   free_mode_indicator_size: 10
-  free_mode_status_display: both
+  free_mode_status_display: cursor
   grid_line_style: lines
   grid_rgba:
   - 1.0
