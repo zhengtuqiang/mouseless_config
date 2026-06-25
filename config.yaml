@@ -1,7 +1,9 @@
-app_version: 1.0.0-preview.4
+app_version: 1.0.0-preview.5
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
+  default_mouse_action: click
+  free_mode_after_move: true
   free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
@@ -420,6 +422,7 @@ keymaps:
     jump to top:
     - B
     - V
+    left click: null
     left mouse button: Space
     left mouse button (w/o overlay): null
     middle click:
