@@ -3,7 +3,7 @@ behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
   default_mouse_action: click
-  free_mode_after_move: true
+  free_mode_after_move: false
   free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
@@ -380,14 +380,19 @@ keymaps:
     - enter
     exit free mode:
     - delete
-    - CommandLeft
     - cmd+shift
     - option+shift
     - ctrl+shift
     - cmd+option+ctrl
-    - cmd+option+shift+ctrl+q
     - ctrl+shift
     - option+space
+    - option+a
+    - cmd+w
+    - cmd+a
+    - cmd+s
+    - cmd+c
+    - cmd+v
+    - cmd+option+shift+ctrl+w
     force overlay resize: cmd+option+shift+ctrl+f
     forward click: null
     forward mouse button:
@@ -407,13 +412,17 @@ keymaps:
     hold for move: OptionLeft
     hold for right button: OptionRight
     hold for speed decrease:
-    - /
-    - A
-    - ;
+    - S
+    - X
+    - Z
+    - C
     hold for speed increase:
-    - ctrl
-    - ShiftLeft
-    - ShiftRight
+    - /
+    - D
+    - E
+    - M
+    - R
+    - T
     increase overlay opacity: ArrowUp
     invert colors: '2'
     jump to bottom: N
@@ -422,8 +431,10 @@ keymaps:
     jump to top:
     - B
     - V
-    left click: null
-    left mouse button: Space
+    left click: B
+    left mouse button:
+    - Space
+    - A
     left mouse button (w/o overlay): null
     middle click:
     - ControlLeft tap
@@ -435,18 +446,10 @@ keymaps:
     - ''''
     middle mouse button: ''''
     middle mouse button (w/o overlay): null
-    move down:
-    - K
-    - D
-    move left:
-    - J
-    - S
-    move right:
-    - L
-    - F
-    move up:
-    - I
-    - E
+    move down: K
+    move left: J
+    move right: L
+    move up: I
     release hold/drag:
     - Escape
     - delete
@@ -461,9 +464,7 @@ keymaps:
     - pagedown
     - '1'
     - h
-    right mouse button:
-    - C
-    - M
+    right mouse button: ;
     right mouse button (w/o overlay): null
     show overlay: cmd+option+shift+ctrl+q
     subgrid nudge down:
@@ -514,7 +515,6 @@ keymaps:
     - g
     toggle free mode:
     - OptionRight tap
-    - cmd+option+shift+ctrl+w
     - cmd+option+shift+ctrl+\
     toggle overlay:
     - CommandLeft tap
@@ -532,21 +532,15 @@ keymaps:
     wheel left fast: null
     wheel right: null
     wheel right fast: null
-    wheel step down:
-    - U
-    - R
-    wheel step down large: H
+    wheel step down: U
+    wheel step down large:
+    - H
+    - F
     wheel step left: null
-    wheel step left large:
-    - Z
-    - ','
+    wheel step left large: ','
     wheel step right: null
-    wheel step right large:
-    - X
-    - .
-    wheel step up:
-    - Y
-    - T
+    wheel step right large: .
+    wheel step up: Y
     wheel step up large: G
     wheel up: null
     wheel up fast: null
