@@ -1,4 +1,4 @@
-app_version: 1.0.0-preview.5
+app_version: 1.0.0
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -34,7 +34,8 @@ custom_mouse_screen_offset_scaling: 1.0
 custom_overlay_scaling: 1.0
 debug_options: {}
 display_input: none
-event_tap_location: hid_head
+event_tap_location: hid_tail
+excluded_input_devices: []
 general_settings:
   automatically_check_for_updates: false
   check_for_preview_releases: true
@@ -359,9 +360,7 @@ keyboard_layout:
 keymaps:
 - entries:
     back click: null
-    back mouse button:
-    - Q
-    - O
+    back mouse button: O
     back mouse button (w/o overlay): null
     clear keyboard state: null
     close UI element: null
@@ -395,9 +394,7 @@ keymaps:
     - cmd+option+shift+ctrl+w
     force overlay resize: cmd+option+shift+ctrl+f
     forward click: null
-    forward mouse button:
-    - P
-    - W
+    forward mouse button: P
     forward mouse button (w/o overlay): null
     hide overlay:
     - escape
@@ -423,6 +420,9 @@ keymaps:
     - M
     - R
     - T
+    - Q
+    - W
+    - '['
     increase overlay opacity: ArrowUp
     invert colors: '2'
     jump to bottom: N
@@ -439,7 +439,6 @@ keymaps:
     middle click:
     - ControlLeft tap
     - '-'
-    - ']'
     - End
     - pageup
     - '4'
@@ -456,10 +455,10 @@ keymaps:
     repeat last mouse action:
     - \
     - '6'
+    - ']'
     right click:
     - OptionRight tap
     - '='
-    - '['
     - Home
     - pagedown
     - '1'
@@ -513,6 +512,7 @@ keymaps:
     - '`'
     - '3'
     - g
+    - '['
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+\
