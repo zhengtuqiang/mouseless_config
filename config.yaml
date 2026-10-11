@@ -21,8 +21,8 @@ behavior_configs:
   tap_threshold_ms: 150
   wheel_easing: 0.3
   wheel_speed_multiplier: 2.0
-  wheel_step_size: 30.0
-  wheel_step_size_large: 125.0
+  wheel_step_size: 125.0
+  wheel_step_size_large: 550.0
 classname: AppConfig
 custom_monitor_assignments:
 - position_based_ztq4
@@ -532,16 +532,16 @@ keymaps:
     wheel left fast: null
     wheel right: null
     wheel right fast: null
-    wheel step down: U
-    wheel step down large:
+    wheel step down:
     - H
     - F
-    wheel step left: null
-    wheel step left large: ','
-    wheel step right: null
-    wheel step right large: .
-    wheel step up: Y
-    wheel step up large: G
+    wheel step down large: U
+    wheel step left: ','
+    wheel step left large: null
+    wheel step right: .
+    wheel step right large: null
+    wheel step up: G
+    wheel step up large: Y
     wheel up: null
     wheel up fast: null
   name: mac
