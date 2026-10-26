@@ -10,7 +10,7 @@ behavior_configs:
   hide_location: top_left
   initial_action_location: system_cursor
   initial_overlay_monitor: with_keyboard_focus
-  label_chars: ASDFGHJKL
+  label_chars: ASDFJKL;
   modifier_tap_mask_key: auto
   mouse_value_cycle_behavior: persist
   move_duration_ms: 100
@@ -477,13 +477,11 @@ keymaps:
     subgrid nudge left:
     - S
     - J
-    - G
     - ;
     subgrid nudge right:
     - F
     - L
     - A
-    - H
     subgrid nudge up:
     - E
     - I
@@ -511,10 +509,9 @@ keymaps:
     toggle free mode:
     - OptionRight tap
     - cmd+option+shift+ctrl+\
-    toggle label mode: null
+    toggle label mode: CommandRight tap
     toggle overlay:
     - CommandLeft tap
-    - CommandRight tap
     - cmd+shift+space
     toggle overlay lock:
     - cmd+option+shift+ctrl+s
@@ -598,14 +595,14 @@ style_configs:
     - 0.0
     - 0.0
   char_anchor: center
-  char_bg_height: 1.1
+  char_bg_height: 3
   char_bg_rgba:
   - 0.02
   - 0.04
   - 0.06
-  - 0
-  char_bg_roundness: 0.25
-  char_bg_width: 1.0
+  - 0.0
+  char_bg_roundness: 1
+  char_bg_width: 3
   char_display: all
   char_spacing_cell_width_ratio: 0.1
   char_spacing_font_size_ratio: 0.5
@@ -683,16 +680,16 @@ style_configs:
   - 1.0
   - 0.5
   subgrid_text_rgba:
-  - 1.0
-  - 1.0
-  - 1.0
+  - 1
+  - 1
+  - 1
   - 0.5
   text_rgba:
   - 1.0
   - 1.0
   - 1.0
   - 0.85
-  text_shadow_blur_radius: 4.0
+  text_shadow_blur_radius: 6
   text_shadow_offset:
   - 0.0
   - 0.0
