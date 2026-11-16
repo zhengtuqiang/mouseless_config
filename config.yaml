@@ -1,4 +1,4 @@
-app_version: 1.1.0-preview.1
+app_version: 1.1.0
 behavior_configs:
 - base_move_speed: 3.5
   base_wheel_speed: 2.0
@@ -11,6 +11,7 @@ behavior_configs:
   initial_action_location: system_cursor
   initial_overlay_monitor: with_keyboard_focus
   label_chars: ASDFJKL;
+  label_menu_bar: true
   modifier_tap_mask_key: auto
   mouse_value_cycle_behavior: persist
   move_duration_ms: 100
@@ -595,14 +596,14 @@ style_configs:
     - 0.0
     - 0.0
   char_anchor: center
-  char_bg_height: 3
+  char_bg_height: 3.0
   char_bg_rgba:
   - 0.02
   - 0.04
   - 0.06
   - 0.0
-  char_bg_roundness: 1
-  char_bg_width: 3
+  char_bg_roundness: 1.0
+  char_bg_width: 3.0
   char_display: all
   char_spacing_cell_width_ratio: 0.1
   char_spacing_font_size_ratio: 0.5
@@ -624,10 +625,10 @@ style_configs:
   - 0.058823529411764705
   - 0.7
   cursor_rgba:
-  - 0.3
-  - 0.42
-  - 0.58
-  - 0.9
+  - 0.3003929083115269
+  - 0.4200906012358604
+  - 0.5796996915994317
+  - 0
   cursor_right_button_rgba:
   - 0.8705882352941177
   - 0.058823529411764705
@@ -680,16 +681,16 @@ style_configs:
   - 1.0
   - 0.5
   subgrid_text_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.5
   text_rgba:
   - 1.0
   - 1.0
   - 1.0
   - 0.85
-  text_shadow_blur_radius: 6
+  text_shadow_blur_radius: 6.0
   text_shadow_offset:
   - 0.0
   - 0.0
